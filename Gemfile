@@ -11,3 +11,5 @@ platform :rbx do
   gem 'rubysl'
   gem 'rubinius-coverage'
 end
+
+gem 'mechanize'
