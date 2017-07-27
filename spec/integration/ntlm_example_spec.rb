@@ -25,7 +25,7 @@ describe 'rubyntlm side-effects' do
   it "works with the default adapter" do
     LogInterceptor.reset_intercepted_request
 
-    #HTTPI.adapter = :httpclient
+    HTTPI.adapter = :httpclient
   
     client = Savon.client(
       :wsdl => "http://www.webservicex.net/ConvertTemperature.asmx?WSDL",
@@ -46,7 +46,7 @@ describe 'rubyntlm side-effects' do
   it "should work with the net_http adapter as well" do
     LogInterceptor.reset_intercepted_request
 
-    #HTTPI.adapter = :net_http
+    HTTPI.adapter = :net_http
 
     client = Savon.client(
       :wsdl => "http://www.webservicex.net/ConvertTemperature.asmx?WSDL",
