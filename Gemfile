@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+
+gem 'httpi', github: 'coldnebo/httpi', branch: 'ntlmerror'
+
 gemspec
 
 gem "httpclient", "~> 2.7.1"
